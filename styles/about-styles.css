@@ -1,0 +1,29 @@
+.about-me img {
+	width: 40%;
+	height: 40%;
+	object-fit: cover;
+	box-shadow: var(--shadow);
+	float: left;
+	margin: 0 20px 10px 0;
+}
+
+.about-me__text-item {
+	margin: 0;
+	text-align: justify;
+}
+
+.about-me__text-item:last-child {
+	margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+	.about-me img {
+		width: 60%;
+	}
+}
+
+@media (max-width: 800px) {
+	.about-me img {
+		width: 100%;
+	}
+}

@@ -1,0 +1,42 @@
+.contacts {
+	background: var(--primary);
+	display: grid;
+	justify-items: center;
+	box-shadow: var(--shadow);
+	padding: 1.5rem;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.contacts__phone {
+	font-size: 1.2rem;
+}
+
+.contacts__item {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.social {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+a {
+	text-decoration: none;
+	color: var(--dark);
+}
+
+.fab {
+	font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+	.contacts {
+		margin-bottom: 0;
+	}
+	.social {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
